@@ -19,7 +19,7 @@ possible in this exciting discipline. Visit my blog here- [The Rest Frame](https
 |RBSE|Secondry|2017|
 
 # Physcis Projects
-## __Self Propulsion of Active Droplet Under Chemical Reaction__
+## __Self Propulsion of Active Droplets ([MSc Thesis](http://dx.doi.org/10.13140/RG.2.2.22465.16488))__
 
 * Showing Liquid-Liquid Phase Separation (LLPS) in Binary Fluid using _Active Model H_.
 * Implemented Spectral Method to solve coupled differential equations in three fields and simulate their dynamics in
