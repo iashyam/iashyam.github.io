@@ -7,7 +7,7 @@ possible in this exciting discipline. Visit my blog here- [The Rest Frame](https
 ##  Work Experience
 **McDermott International-** Associate Structural Engineer (July 2024- )
 * Record and manage weight data and create weight control reports.
-* Create and analyse a database from the weight control team. 
+* Create and analyze a database from the weight control team. 
 
 ## Education
 |**Institute**|**Degree**|**Year**|
@@ -18,17 +18,17 @@ possible in this exciting discipline. Visit my blog here- [The Rest Frame](https
 |RSBE|Higher Secondry|2019|
 |RBSE|Secondry|2017|
 
-## Physcis Projects
-#### __Self Propulsion of Active Droplets ([MSc Thesis](http://dx.doi.org/10.13140/RG.2.2.22465.16488))__
+## Physics Projects
+### __Self Propulsion of Active Droplets ([MSc Thesis](https://drive.google.com/file/d/1_nTlfJHk-Zi0dNoaQpHKjhqhH_bKkxWA/view?usp=drive_link))__
 
 * Showing Liquid-Liquid Phase Separation (LLPS) in Binary Fluid using _Active Model H_.
 * Implemented Spectral Method to solve coupled differential equations in three fields and simulate their dynamics in
 Python.
 * Simulated the self-propulsion of an Active Droplet under a dilute chemical field and low Reynolds’s number
 approximation.
-* Simulated the self-propulsion of an active Janus Droplet and analysed the effect of the environment on propulsion speed.
+* Simulated the self-propulsion of an active Janus Droplet and analyzed the effect of the size and activity on propulsion speed.
 * Simulated the self-propulsion of an active Janus Particle by extending the droplet theory using Fluid Particle Dynamics.
-* Developed a generalised code and algorithm to explore self-propulsion using conserved field dynamics and low Reynolds’s number
+* Developed a generalized code and algorithm to explore self-propulsion using conserved field dynamics and low Reynolds’s number
 approximation.
 
 ### __Monte Carlo Simulations__
@@ -73,17 +73,15 @@ Showed phase transition in the fluid.
 ### __Machine Learning Based Project__
 
 + Training a simple Neural Network to find the roots of a polynomial equation. 
-+ Training a simple Neural Network for solving 1-D Differential Equations.(UF)
++ Training a simple Neural Network for solving 1-D Differential Equations. (UF)
 + Handwritten digits recognition program with Keras's Neural Network ($97%$ Accuracy)
 + Huston's House price prediction platform. (Submitted in Kaggle competition.
-+ More to be added in future. 
 
 ### __Web Development Based Project__:
 
-+ Simple portfolio or someone in a modelling career. 
++ Simple portfolio or someone in a modeling career. 
 + Adding small features and developments to my own HUGO website. 
 + Built a small website for myself using HTML and CSS. 
-+ More will be added in the future.
 
 ### __Other Self Projects__:
 + __Lisaajoo’s figures:__ An interactive GUI software to draw Lisaajoo’s figures for any general case.
