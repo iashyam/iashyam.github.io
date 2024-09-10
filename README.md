@@ -84,7 +84,7 @@ Showed phase transition in the fluid.
 + Built a small website for myself using HTML and CSS. 
 
 ### __Other Self Projects__:
-+ __Lisaajoo’s figures:__ An interactive GUI software to draw Lisaajoo’s figures for any general case.
++ __Lissajous curve:__ An interactive GUI software to draw Lisaajoo’s figures for any general case.
 + __Web Scrapper:__ A web scrapping tool that automatically creates a new GitHub repo on my account whenever I start a new project.
 It works on the Linux platform and uses Linux shell scripts.
 + __Sudoku:__ Made a simple sudoku game using GUI in Python. 
