@@ -7,7 +7,8 @@ possible in this exciting discipline. Visit my blog here- [The Rest Frame](https
 ##  Work Experience
 **McDermott International-** Associate Structural Engineer (July 2024- )
 * Record and manage weight data and create weight control reports.
-* Create and analyze a database from the weight control team. 
+* Create and analyze a database from the weight control team.
+* Automatation of Analysis report generation using python, dataframes, and python-docx. 
 
 ## Education
 |**Institute**|**Degree**|**Year**|
@@ -73,9 +74,12 @@ Showed phase transition in the fluid.
 ### __Machine Learning Based Project__
 
 + Training a simple Neural Network to find the roots of a polynomial equation. 
-+ Training a simple Neural Network for solving 1-D Differential Equations. (UF)
++ Training a simple Neural Network for solving 1-D Differential Equations using __Physics Informed Neural Networks.__
 + Handwritten digits recognition program with Keras's Neural Network ($97%$ Accuracy)
 + Huston's House price prediction platform. (Submitted in Kaggle competition.
++ Classification problem: Iris species detection using leaf properties.
++ Classfication: MNIST Fashion type detection using Convolution Neural Netwok.
++ Similarity Detection: A simple movie recommadation Sytem. 
 
 ### __Web Development Based Project__:
 
@@ -116,19 +120,14 @@ __Languages__: Python, C++, HTML, CSS. JavaScript, SQL
 + Teaching Assistant: Personal And Professional Growth Course, IIT Madras
 + Freelance Teaching: Learn with PKB
 
-## Certificates 
-
-+ Data Analysis from LinkedIn Learning 
-+ SQL intermediate from LinkedIn Learning 
-
 ## Hobbies and Extra-curricular
 
 + Running a literary blog consistently for about four years.
-+ Reading books and articles 
-+ Writing poems and stories
++ Reading books and articles. 
++ Writing poems and stories.
 + Expressive Arts, painting and sketching.
-+ Interested in Literature and  Linguistics
-+ Interested in Philosophy and History
++ Interested in Literature and  Linguistics.
++ Interested in Philosophy and History.
 
 ## Contact Me:
 
