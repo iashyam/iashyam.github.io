@@ -1,0 +1,29 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Apply Georgia font to the body */
+body {
+  font-family: 'Georgia', serif;
+  font-size: 16px; /* Medium size text */
+}
+
+/* You can also specify for headings, paragraphs, etc. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+  font-weight: normal; /* Georgia is usually medium-weight, adjust as needed */
+}
+
+p {
+  font-family: 'Georgia', serif;
+  font-size: 16px; /* Adjust font size for paragraphs */
+  text-align: justify;
+}
+

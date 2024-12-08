@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: https://iashyam.github.io/demo/demo/sitemap.xml
