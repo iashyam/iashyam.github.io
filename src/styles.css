@@ -1,0 +1,204 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — dark, sleek 2026.
+ * Near-black slate surfaces, white foreground, electric lime accent.
+ * All colors in oklch, mapped to Tailwind utilities via @theme inline.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.14 0.012 260);
+  --foreground: oklch(0.965 0.004 260);
+  --card: oklch(0.175 0.014 260);
+  --card-foreground: oklch(0.965 0.004 260);
+  --popover: oklch(0.17 0.014 260);
+  --popover-foreground: oklch(0.965 0.004 260);
+  --primary: oklch(0.965 0.004 260);
+  --primary-foreground: oklch(0.14 0.012 260);
+  --secondary: oklch(0.22 0.016 260);
+  --secondary-foreground: oklch(0.965 0.004 260);
+  --muted: oklch(0.2 0.014 260);
+  --muted-foreground: oklch(0.67 0.015 260);
+  --accent: oklch(0.87 0.21 130);
+  --accent-foreground: oklch(0.16 0.03 130);
+  --destructive: oklch(0.62 0.22 25);
+  --destructive-foreground: oklch(0.97 0.004 260);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.87 0.21 130);
+  /* Ambient hero glow, used by the hero section background */
+  --glow: oklch(0.87 0.21 130 / 14%);
+}
+
+.dark {
+  --background: oklch(0.14 0.012 260);
+  --foreground: oklch(0.965 0.004 260);
+  --card: oklch(0.175 0.014 260);
+  --card-foreground: oklch(0.965 0.004 260);
+  --popover: oklch(0.17 0.014 260);
+  --popover-foreground: oklch(0.965 0.004 260);
+  --primary: oklch(0.965 0.004 260);
+  --primary-foreground: oklch(0.14 0.012 260);
+  --secondary: oklch(0.22 0.016 260);
+  --secondary-foreground: oklch(0.965 0.004 260);
+  --muted: oklch(0.2 0.014 260);
+  --muted-foreground: oklch(0.67 0.015 260);
+  --accent: oklch(0.87 0.21 130);
+  --accent-foreground: oklch(0.16 0.03 130);
+  --destructive: oklch(0.62 0.22 25);
+  --destructive-foreground: oklch(0.97 0.004 260);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.87 0.21 130);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  :where(a, button):focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 3px;
+  }
+}
+
+@utility text-display {
+  font-family: var(--font-display);
+}
+
+/* ============ Subtle motion ============ */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate3d(0, -3%, 0) scale(1.06);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* Staggered entrance: opt in with .animate-fade-up, sequence with --delay */
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--delay, 0ms);
+}
+
+.animate-glow-drift {
+  animation: glow-drift 12s ease-in-out infinite;
+}
+
+/* Slow gradient sweep for the accent headline span */
+.text-shimmer {
+  background-image: linear-gradient(
+    100deg,
+    var(--accent) 40%,
+    oklch(0.95 0.12 130) 50%,
+    var(--accent) 60%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-fade-up,
+  .animate-glow-drift,
+  .text-shimmer {
+    animation: none;
+  }
+  .animate-fade-up {
+    opacity: 1;
+  }
+  .text-shimmer {
+    color: var(--accent);
+    -webkit-text-fill-color: var(--accent);
+  }
+}

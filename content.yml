@@ -1,0 +1,87 @@
+# ============================================================================
+# Products, projects and skills. Everything else on the site is static code.
+#
+# Validated when the site is built (tools/content-plugin.ts): a missing field,
+# an unknown skill icon, an image file that does not exist, or a category that
+# is not in src/content/categories.ts fails the build and names the path.
+#
+# url:   a product's live site (required for products)
+# repo:  a project's source, https://github.com/owner/repo (required for projects)
+# image: a file name in src/assets/products/ or src/assets/projects/. Required
+#        for products; optional for projects — without one the card shows a
+#        lettered placeholder.
+# icon:  a name from the allowlist in src/content/icon-names.ts
+# ============================================================================
+
+products:
+  - name: AchhiCV
+    url: https://achhicv.in
+    description: AI-powered resume optimization. Upload a resume and get an ATS score plus an AI-optimized version in seconds — secure, private, no signup required.
+    tags: [AI, SaaS]
+    image: achhicv.jpg
+  - name: AchhiLife
+    url: https://achhilife.in
+    description: Free, private check-ins for your mind — clinically-aligned anxiety, depression, and OCD screenings with instant AI insights. No account needed.
+    tags: [AI, Health]
+    image: achhilife.jpg
+  - name: AchhiTaiyari
+    url: https://achhitaiyari.in
+    description: AI-powered exam test series. Coaching institutes upload PDFs and AI builds full mock tests, previous-year papers, and score analysis for every exam.
+    tags: [AI, EdTech]
+    image: achhitaiyari.jpg
+
+# Seeded from your public repos (github.com/iashyam) using their own GitHub
+# descriptions — prune, reorder, or add entries. `repo` is required and must be
+# a full https://github.com/owner/repo URL. Categories are a guess from each
+# repo's language and topics; the allowed list is src/content/categories.ts.
+# Add `image: <file in src/assets/projects/>` to replace a lettered placeholder.
+projects:
+  - title: Athena
+    description: End-to-end PyTorch training pipeline for multiclass sentiment analysis, with MLflow tracking, ONNX export and a containerised serving path.
+    categories: [Machine Learning, NLP, Data Engineering]
+    repo: https://github.com/iashyam/athena
+  - title: Argus
+    description: From-scratch implementations of vision model architectures — currently MobileNetV2, EfficientNet and Vision Transformer.
+    categories: [Computer Vision, Machine Learning]
+    repo: https://github.com/iashyam/argus
+  - title: PostGen
+    description: A LinkedIn post generator built on LangGraph, chaining prompts into a drafting and editing workflow.
+    categories: [NLP]
+    repo: https://github.com/iashyam/PostGen
+  - title: Wordle Bot
+    description: A Python bot that solves Wordle puzzles by picking the guess with the highest expected information gain.
+    categories: [Machine Learning]
+    repo: https://github.com/iashyam/wordle-bot
+  - title: Physics-Informed Machine Learning
+    description: Experiments in physics-informed machine learning, training models that carry the governing equations as part of the loss.
+    categories: [Machine Learning]
+    repo: https://github.com/iashyam/PIML
+
+skills:
+  - label: Languages
+    items:
+      - { name: Python, icon: FileCode2 }
+      - { name: TypeScript, icon: Braces }
+      - { name: SQL, icon: Database }
+      - { name: C++, icon: Binary }
+  - label: Machine Learning
+    items:
+      - { name: PyTorch, icon: Brain }
+      - { name: TensorFlow, icon: Network }
+      - { name: scikit-learn, icon: TrendingUp }
+      - { name: Hugging Face, icon: Bot }
+      - { name: XGBoost, icon: Layers }
+  - label: Data Engineering
+    items:
+      - { name: Spark, icon: Box }
+      - { name: Airflow, icon: Workflow }
+      - { name: Kafka, icon: GitBranch }
+      - { name: PostgreSQL, icon: Database }
+      - { name: dbt, icon: Layers }
+  - label: MLOps & Cloud
+    items:
+      - { name: Docker, icon: Container }
+      - { name: Kubernetes, icon: Box }
+      - { name: AWS, icon: Cloud }
+      - { name: MLflow, icon: TrendingUp }
+      - { name: Git, icon: GitBranch }

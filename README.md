@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Welcome to your Lovable project
 
-## Getting Started
+This project was built with [Lovable](https://lovable.dev).
 
-First, run the development server:
+## Build with Lovable
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
+- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+
+## Editing site content
+
+[`content.yml`](./content.yml) holds the three lists that change often —
+**products, projects and skills**. Everything else is static code:
+
+| Where | What lives there |
+|---|---|
+| `content.yml` | products, projects, skills |
+| `src/site.ts` | name, role, company, email, GitHub handle, blog URL, socials |
+| `src/content/categories.ts` | the project filter buttons, in order |
+| `src/content/icon-names.ts` + `icons.ts` | the lucide icons skills may use |
+| the components | section headings and body copy |
+| `src/routes/*.tsx` | page metadata (title, description, OG tags) |
+
+A product needs `name`, `url` (its live site), `description`, `tags` and
+`image`. A project needs `title`, `description`, `categories` and `repo` — the
+full `https://github.com/owner/repo` URL, which both the card image and its
+"View on GitHub" row link to. A project's `image` is optional; without one the
+card shows a lettered placeholder.
+
+Images are file names, not paths: product images live in `src/assets/products/`
+and project images in `src/assets/projects/`.
+
+`content.yml` is validated when the site is built (`tools/content-plugin.ts`),
+so a missing field, an unknown icon, a category that is not in
+`src/content/categories.ts`, an image file that does not exist, a `repo` that is
+not a GitHub repository URL, or a stray key fails the build and names the exact
+path — for example `projects.1.repo: must be a GitHub repository URL`.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+
+```sh
+git clone <this-repository-url>
+cd <repository-name>
+bun install   # bun.lock and bunfig.toml are the committed lockfile + install policy
+bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Built with
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- TanStack Start
+- TypeScript
+- React
+- Tailwind CSS
