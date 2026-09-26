@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Shyam Sunder">
+  <!-- Lime tile with a knocked-out S. Colours are the resolved hex of the
+       site's accent / accent-foreground tokens; an .svg favicon cannot read
+       CSS custom properties from the page. Keep in sync with Logo.tsx. -->
+  <rect width="64" height="64" rx="14" fill="#A5EE40"/>
+  <path d="M45.5 17H25.5a7.5 7.5 0 0 0 0 15h13a7.5 7.5 0 0 1 0 15H18.5"
+        fill="none" stroke="#091003" stroke-width="9"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

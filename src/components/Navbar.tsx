@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
+import { LogoMark } from "@/components/Logo";
 import { site } from "@/site";
 
 const navLinks = [
@@ -14,9 +15,7 @@ const navLinks = [
 function Logo() {
   return (
     <a href="/" className="flex min-w-0 items-center gap-2.5">
-      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent text-display text-sm font-bold text-accent-foreground">
-        S
-      </span>
+      <LogoMark className="h-8 w-8 shrink-0" />
       <span className="truncate text-display text-base font-semibold">
         {site.name}
       </span>
