@@ -4,13 +4,12 @@ export const site = {
   name: "Shyam Sunder",
   role: "Machine Learning Engineer",
   company: "McDermott",
-  email: "hello@example.com", // TODO placeholder
+  email: "ph22c047@smail.iitm.ac.in",
   githubUsername: "iashyam",
-  blogUrl: "https://blog.example.com", // TODO placeholder
+  blogUrl: "https://iashyam.in",
   socials: [
-    // TODO placeholders — these point at the sites, not at profiles.
-    { label: "GitHub", href: "https://github.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "X", href: "https://x.com" },
+    { label: "GitHub", href: "https://github.com/iashyam" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/iashyam" },
+    { label: "X", href: "https://twitter.com/shyam10kwd" },
   ],
 } as const;

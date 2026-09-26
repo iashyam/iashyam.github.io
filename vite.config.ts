@@ -11,9 +11,12 @@ export default defineConfig({
   // Parses + validates content.yml and emits it as data. Build-time only:
   // nothing from the validator reaches the bundle.
   vite: { plugins: [contentPlugin()] },
+  // Prerender leaves handles open, so the build process never exits on its own.
+  buildExitWatchdog: { enabled: true, graceMs: 5000 },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    prerender: { enabled: true, crawlLinks: true },
   },
 });
