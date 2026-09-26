@@ -4,7 +4,7 @@ export const site = {
   name: "Shyam Sunder",
   role: "Machine Learning Engineer",
   company: "McDermott",
-  email: "ph22c047@smail.iitm.ac.in",
+  email: "shyam10kwd@gmail.com",
   githubUsername: "iashyam",
   blogUrl: "https://iashyam.in",
   socials: [
